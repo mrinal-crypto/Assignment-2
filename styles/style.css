@@ -1,0 +1,425 @@
+/* font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*======================
+        common css
+=========================*/
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.common-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 41px;
+    cursor: pointer;
+    box-shadow: 0 5px 6px #a5075e;
+    position: relative;
+    top: 0;
+}
+.common-button:active{
+    top: 2px;
+    box-shadow: 0 3px 2px #a5075e;
+}
+
+.fa-arrow-right{
+    color: white;
+    margin-left: 10px;
+}
+
+
+/*========================
+         nav-bar css 
+==========================*/
+nav{
+    color: white;
+    background-color: #0A0826;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-radius: 5px;
+}
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    font-size: 30px;
+}
+.bar-icon{
+    height: 30px;
+    width: 30px;
+    padding: 10px 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-options{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 15px;
+}
+.nav-icons i{
+    margin-left: 5px;
+    padding: 15px 15px;
+}
+.nav-icons i:hover{
+    cursor: pointer;
+}
+
+/*========================
+         banner css
+==========================*/
+.banner{
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 800px;
+
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 52px;
+}
+.banner-left p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-right:hover{
+    cursor: zoom-in;
+    transform: scale(110%);
+    transition: transform 0.5s ease-in-out;
+}
+.banner-right img{
+    width: 100%;
+}
+/* ====================
+    shopping-logos 
+=======================*/
+.shopping-logos{
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-logos img{
+    margin: 0 25px;
+}
+.shopping-logos img:hover{
+    cursor: pointer;
+}
+
+/* =========================
+    main*popular-collection
+==============================*/
+.collections-head{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+.main-gallery a{
+    text-decoration: none;
+    color: black;
+}
+.blog{
+    box-shadow: 0 3px 8px #7e7b7d;
+    border-radius: 7px;
+    width: 329px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+.blog:hover{
+    top: 3px;
+    box-shadow: 0 5px 10px rgb(226, 121, 191);
+}
+.thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.blog-title{
+    font-weight: 500;
+}
+.price{
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+color: rgba(0, 0, 0, 0.87);
+}
+.fa-star{
+    width: 16px;
+    height: 16px;
+}
+.ratings .filled{
+    color: rgb(248, 73, 29);
+}
+.ratings .blank,.rate-no{
+    color: #5E6366;
+}
+.features{
+    color: #5E6366;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*===================
+        see more 
+ ====================*/
+ .see-more{
+     margin-top: 30px;
+ }
+ .see-more{
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ /* ========================
+        bonus section 
+ ============================*/
+ .bonus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+ .bonus-left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bonus-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;   
+}
+.bonus-right h1{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 99%;
+    margin-bottom: 16px;
+}
+.bonus-right p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+ .bonus-left img{
+    width: 100%;
+    height: 500px;
+
+ }
+ /* .bonus-left img:hover{
+     transform: scale(120%);
+     transition: transform 1s ease-in-out;
+ } */
+
+/* =======================
+        footer css 
+==========================*/
+footer{
+    background-color: #0A0826;
+    height: 150px;
+    border-radius: 5px;
+}
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.footer-name h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer-info p{
+    text-align: center;
+}
+.footer-icons i{
+    margin-top: 5px;
+    padding: 0 8px;
+}
+.footer-icons i:hover{
+    cursor: pointer;
+}
+
+
+/*=================================
+            responsive css 
+ ==================================*/
+@media (max-width:950px){
+    nav{
+        height: 60px;
+    }
+    .nav-name h2{
+        font-size: 20px;
+    }
+    .nav-options li a{
+        font-size: 13px;
+        padding: 5px 5px;
+    }
+    .nav-icons i{
+        font-size: 20px;
+        margin-left: 5px;
+        padding: 5px 5px;
+    }
+    .banner{
+        height: fit-content;
+    }
+    .main-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-left h1{
+        font-size: 40px;
+        line-height: 98%;
+    }
+    .banner-left p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+    .bonus-left img{
+        width: 95%;
+        height: 450px;
+    }
+    .bonus-right h1{
+        font-size: 32px;
+        line-height: 98%;
+    }
+    .bonus-right p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .common-button{
+        outline: 0;
+        border: 0;
+        padding: 10px 10px;
+        background-color: #E02C6D;
+        color: white;
+        font-size: 10px;
+        font-weight: 500;
+        border-radius: 41px;
+        cursor: pointer;
+        box-shadow: 0 5px 6px #a5075e;
+        position: relative;
+        top: 0;
+    }
+
+}
+@media (max-width:800px){
+    .nav-toggler-icon{
+        display: block;
+        margin-right: 15px;
+    }
+    .nav-options{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        order: 1;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        color: chocolate;
+        background-color: #0A0826;
+        transform: translateY(-250px);
+        transition: 0.5s ease-in-out;
+    }
+    #nav-toggler:checked ~ .nav-options{
+        transform: translateY(0px);
+    }
+    .banner{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .main-gallery, .bonus{
+        grid-template-columns: 1fr;
+    }
+    .shopping-logos{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .collections-head{
+        margin-bottom: 10px;
+    }
+
+    .banner-left h1{
+        font-size: 30px;
+        line-height: 98%;
+    }
+    .banner-left p{
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+    .bonus-left img{
+        width: 95%;
+        height: 400px;
+    }
+    .bonus-right h1{
+        font-size: 30px;
+        line-height: 98%;
+    }
+    .bonus-right p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
